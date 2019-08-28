@@ -11,6 +11,10 @@ const handler = (req, res) => {
 }
 
 
+
+module.exports = handler
+
+
 const server = http.createServer(handler);
 const port = process.env.PORT || 3000
 server.listen(port,  () => {
